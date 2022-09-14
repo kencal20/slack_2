@@ -7,6 +7,7 @@ import {
   Image,
   ScrollView,
 } from "react-native";
+
 import logo from "../../assets/logo.png";
 export default function Home({ navigation }) {
   return (
@@ -40,10 +41,11 @@ export default function Home({ navigation }) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "purple",
+    backgroundColor: "yellow",
+    marginHorizontal: 20,
   },
   img: {
-    marginTop: 20,
+    marginTop: 70,
     width: 150,
     height: 150,
     marginBottom: 40,
@@ -52,17 +54,18 @@ const styles = StyleSheet.create({
   },
   App_name: {
     fontSize: 20,
-    fontWeight: "400",
-    color: "white",
+    fontWeight: "800",
+
     marginLeft: 100,
   },
   dlink: {
     position: "relative",
-    left: 40,
-    top: 60,
+    left: 50,
+    top: 100,
+    right: 20,
   },
   login_link: {
-    backgroundColor: "dodgerblue",
+    backgroundColor: "black",
     width: 200,
     height: 50,
     borderRadius: 1,
@@ -70,7 +73,7 @@ const styles = StyleSheet.create({
     marginVertical: 5,
   },
   login_txt: {
-    marginVertical: 10,
+    marginVertical: 12,
     color: "white",
     marginHorizontal: 20,
     fontSize: 20,
@@ -78,7 +81,7 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
   },
   signup_link: {
-    borderColor: "dodgerblue",
+    borderColor: "black",
     borderWidth: 1,
     width: 200,
     height: 50,
@@ -88,8 +91,8 @@ const styles = StyleSheet.create({
   },
 
   signup_txt: {
-    marginVertical: 10,
-    color: "white",
+    marginVertical: 12,
+    color: "black",
     marginHorizontal: 20,
     fontSize: 20,
     alignSelf: "center",
