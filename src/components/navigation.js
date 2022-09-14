@@ -3,8 +3,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import Home from "../pages/Home";
 import Signup from "../pages/Signup";
 import Login from "../pages/Login";
-import Main from "./Main"
-
+import Main from "./Main";
 
 const Stack = createStackNavigator();
 
@@ -21,7 +20,7 @@ export default function Navigation() {
           headerTintColor: "white",
         }}
       >
-        <Stack.Screen name="Main" component={Main}/>
+      
         <Stack.Screen name="Home" component={Home} />
         <Stack.Screen
           name="Login"
@@ -37,7 +36,6 @@ export default function Navigation() {
             headerShown: true,
           }}
         />
-        
       </Stack.Navigator>
     </NavigationContainer>
   );
