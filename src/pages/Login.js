@@ -30,17 +30,18 @@ export default function Login({ navigation }) {
           autoComplete="off"
           secureTextEntry={true}
         />
-      </View>
+      </View >
+
       <TouchableOpacity style={styles.forgot_link}>
         <Text style={styles.forgot_text}>Forgot Password ?</Text>
       </TouchableOpacity>
-      <View>
+      <View style={styles.buttonContainer}>
         <TouchableOpacity style={styles.login_link}>
           <Text style={styles.login_text}>Log in</Text>
         </TouchableOpacity>
       </View>
       <View style={styles.no_Account}>
-        <Text style={styles.signin_text}>
+        <Text style={styles.signin_txt}>
           Don't have account?
           <TouchableOpacity
             style={styles.signin_linktxt}
@@ -48,7 +49,7 @@ export default function Login({ navigation }) {
               navigation.navigate("Signup");
             }}
           >
-            <Text style={styles.signin_linktxt}>Signin</Text>
+            <Text >Signin</Text>
           </TouchableOpacity>
         </Text>
       </View>
@@ -58,7 +59,7 @@ export default function Login({ navigation }) {
 
 const styles = StyleSheet.create({
   container: {
-    marginTop: 70,
+    marginTop: 10,
     marginHorizontal: 50,
   },
   header: {
@@ -80,11 +81,11 @@ const styles = StyleSheet.create({
   forgot_text: {
     color: "dodgerblue",
   },
-  login_link: {
+  buttonContainer: {
     backgroundColor: "purple",
     alignItems: "center",
     borderRadius: 10,
-    marginTop: 60,
+    marginTop: 20,
   },
   login_text: {
     fontSize: 16,
@@ -93,18 +94,27 @@ const styles = StyleSheet.create({
     color: "white",
   },
   no_Account: {
-    marginTop: 30,
+    marginTop: 10,
   },
-  signin_text: {
+  login_linktxt: {
     alignSelf: "center",
     fontSize: 16,
   },
 
-  signin_linktxt: {
+  loginin_linktxt: {
     flex: 1,
     marginLeft: 20,
     fontWeight: "bold",
     color: "purple",
- 
+  },
+  signin_linktxt: {
+    marginHorizontal: 20,
+    fontSize: 15, 
+     color: "purple",
+    fontWeight: "bold",
+  },
+  signin_txt: {
+    fontSize:14
+  
   },
 });
