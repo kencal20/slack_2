@@ -8,6 +8,7 @@ import {
   TouchableOpacity,
 } from "react-native";
 
+ 
 export default function Signup({ navigation }) {
   return (
     <ScrollView style={styles.container} showsVerticalScrollIndicator={false}>
@@ -54,12 +55,12 @@ export default function Signup({ navigation }) {
         <Text style={styles.login_Text}>
           You already have an account?
           <TouchableOpacity
-            style={styles.login_link}
             onPress={() => {
               navigation.navigate("Login");
+             
             }}
           >
-            <Text style={styles.login_linktxt}>Log in</Text>
+            <Text style={styles.login_linktxt}>Login</Text>
           </TouchableOpacity>
         </Text>
       </View>
@@ -69,7 +70,7 @@ export default function Signup({ navigation }) {
 
 const styles = StyleSheet.create({
   container: {
-    marginTop: 70,
+    marginTop: 10,
     marginHorizontal: 30,
   },
   header: {
@@ -90,11 +91,11 @@ const styles = StyleSheet.create({
     alignitems: "center",
     borderRadius: 10,
     height: 40,
-    marginVertical: 30,
+    marginVertical: 10,
   },
   signup_text: {
     alignSelf: "center",
-    marginVertical: 4,
+    marginVertical: 10,
     color: "white",
     fontSize: 20,
     fontWeight: "400",
@@ -110,4 +111,7 @@ const styles = StyleSheet.create({
     color: "purple",
     fontWeight: "bold",
   },
+account_already:{
+  marginBottom:0
+}
 });
